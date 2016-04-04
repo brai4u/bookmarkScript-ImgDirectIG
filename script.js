@@ -5,7 +5,7 @@ script.type = 'text/javascript';
 document.getElementsByTagName('head')[0].appendChild(script);
 
 /*Seleccion de xpath / parents*/
-var srcIG = $("body > div:nth-child(9) > div > div._g1ax7 > div > article > div:nth-child(2) > div > div._jjzlb > img").attr("src");
+var srcIG = $("img[id*='pImage_']").attr("src");
 var srcVIDEOIG = $("body > div:nth-child(9) > div > div._g1ax7 > div > article > div.ResponsiveBlock > div:nth-child(1) > div > div > div._tqoyh._pwe27 > div > video").attr("src");
 
 /*Si la variable img no tiene nada, quiere decir que es un video, por lo tanto utiliza el ink del video*/
